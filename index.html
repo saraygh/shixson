@@ -1,0 +1,698 @@
+ <!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="css/style-box-hover.css">
+  <link rel="stylesheet" href="css/style-box-hover-large.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <title>Shixon</title>
+  <style>
+    * {
+      font-family: 'iranSans';
+      font-style: normal;
+      font-weight: normal;
+    }
+    .yellow-color {
+    color:rgb(250, 158, 52);
+    }
+
+    .txt-color {
+      color: #7b5990;
+    }
+    .icon-center{
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+    }
+
+    @font-face {
+      font-family: iranSans;
+      src: url(webFonts/IRANSansWeb\(FaNum\).woff2) format('woff');
+    }
+
+    .sectionTitle {
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      text-align: center;
+      top: 24px;
+    }
+    .sectionTitle span{
+      background: none repeat scroll 0 0 #fff;
+      border: 1px solid #e4e5e7;
+      border-radius: 3px;
+      color: #8e44ad;
+      font-size: 18px;
+      font-weight: 400;
+      padding: 6px 32px;
+      position: relative;
+      text-transform: uppercase;
+      z-index: 3;
+      font-family: 'IRANSans';
+      }
+      .sectiondown{
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      text-align: center;
+      top: -20px;
+      }
+      .sectiondown span{
+      background: none repeat scroll 0 0 #fff;
+      border: 1px solid #e4e5e7;
+      border-radius: 3px;
+      color: #8e44ad;
+      font-size: 18px;
+      font-weight: 400;
+      padding: 6px 32px;
+      position: relative;
+      text-transform: uppercase;
+      z-index: 3;
+      font-family: 'IRANSans';
+      }
+
+
+    
+    .sectionbg {
+      background-color: #e7d9ea;
+    }
+    .btn-color{
+      background-color: #7b5990;
+      border: none;
+      box-shadow: none;
+      color: white;
+      padding: 4px;
+    }
+
+    .card-pic-trim{
+      width: 200px;
+      height: 250px;
+      /* margin: 10px; */
+      /* top: 0;
+      left: 0; */
+      overflow:hidden ;
+      box-shadow: 0 15 15 -15px #302525;
+      border: 3px solid transparent;
+      position: relative;
+
+    }
+    .card-pic-trim .price-bar{
+        width: 100%;
+        height: 15%;
+        background-color: #7b5990;
+        bottom: -40px;
+        left: 0;
+        text-align: center;
+        color: white;
+        padding: 8px;
+        transition: all , 0.4s;
+        position: absolute  
+    }
+
+    .card-pic-trim:hover .price-bar{
+        bottom: 0;
+    }
+    .card-title{
+      font-size: 14px;
+      text-align: center;
+      color: #5f5f5f;
+    }
+    .strike{
+      font-size: 12px;
+      color: #5f5f5f;
+      text-align: left;
+    }
+    .card-text{
+      font-size: 14px;
+      text-align: left;
+    }
+    .card-size{
+      font-size: 14px;
+      text-align: left;
+    }
+    .textbg-off{
+      font-size: 14px;
+      background-color: #7b5990;
+    }
+    .card-text2{
+      font-size: 15px;
+    }
+    .strike2{
+      font-size: 12px;
+      color: #5f5f5f;
+      margin-bottom: 0;
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <!-- <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <img  class="img-fluid max-width" src="images/header.jpg" alt="">
+      </div>
+    </div>
+  </div> -->
+
+  
+
+  <!-- start of navbar codes -->
+  <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">زنانه</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">مردانه</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">بچه گانه</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">لباس</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"> کیف و کفش</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"> عطر و ادکلن</a>
+      <li class="nav-item">
+        <a class="nav-link" href="#">اکسسوری</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"> آرایش و بهداشتی </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">لوازم خانگی</a>
+      <li class="nav-item ">
+        <strong><a class="nav-link txt-color " href="#">زیر قیمت بازار</a></strong>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link txt-color" href="#">تک سایزها</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link txt-color" href="#">ست‌ها</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link txt-color" href="#">وبلاگ</a>
+      </li>
+
+      <img class="mw-50" src="images/logo.png" alt="not founf">
+
+    </ul>
+  </nav>
+ <!-- end of navbar codes -->
+
+
+ <!-- start of carousel codes -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 px-0 ">
+        <div id="demo" class="carousel slide">
+
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+            <!-- <button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button> -->
+          </div>
+
+          <!-- The slideshow/carousel -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/1.jpg" alt="Los Angeles" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="images/2.jpg" alt="Chicago" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="images/3.jpg" alt="New York" class="d-block w-100">
+            </div>
+            <div class="carousel-item ">
+              <img src="images/4.jpg" alt="Los Angeles" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="images/5.jpg" alt="Chicago" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="images/6.jpg" alt="New York" class="d-block w-100">
+            </div>
+          </div>
+
+          <!-- Left and right controls/icons -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <!-- <span class="visually-hidden">Previous</span> -->
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <!-- <span class="visually-hidden">Next</span> -->
+          </button>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- end of carousel codes -->
+
+
+ <!-- start of cards codes -->
+  <div class="container">
+    <div class="row justify-content-center mt-4">
+      <div class="col-12 col-lg-2" >
+        <div class="card shadow" >
+          <div class="icon-center">
+            <img style="width: 50px;" src="icons/icons8-delivery-100.png" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <p class="card-text text-center txt-color">ارسال سریع</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-12 col-lg-2" >
+        <div class="card shadow" >
+          <div class="icon-center">
+            <img style="width: 50px;" src="icons/icons8-date-100.png" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <p class="card-text text-center txt-color">ضمانت تعویض 10 روزه</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-12 col-lg-2" >
+        <div class="card shadow" >
+          <div class="icon-center">
+            <img style="width: 50px;" src="icons/icons8-gift-100.png" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <p class="card-text text-center txt-color">مطابقت کامل با سایت </p>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-12 col-lg-2" >
+        <div class="card shadow" >
+          <div class="icon-center">
+            <img style="width: 50px;" src="icons/icons8-shopping-bag-100.png" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <p class="card-text text-center txt-color"> فروش کالا در شیکسون</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-12 col-lg-2" >
+        <div class="card shadow" >
+          <div class="icon-center">
+            <img style="width: 50px;" src="icons/icons8-box-100.png" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <p class="card-text text-center txt-color">بسته بندی شیک </p>
+          </div>
+
+        </div>
+      </div>
+
+
+      
+
+
+    </div>
+  </div>
+ <!-- end of cards codes -->
+
+ <!-- start of section1 codes -->
+  <div class="container">
+    <div class="row">
+
+      <div class="col-12 col-md-4 col-lg-4  icon-center  mt-4">
+          <div class="box ">
+            <p><img src="images/p1.jpg" alt="" class="img-fluid " ></p>
+            <div class="light1"></div>
+            <div class="dark"></div>
+          </div> 
+      </div> 
+
+
+      <div class="col-12 col-md-4 col-lg-4   icon-center mt-4 " >
+        <div class=" box  " >
+            <p><img src="images/p2.jpg" alt="" class="img-fluid"></p>
+            <div class="light1"></div>
+            <div class="dark"></div>
+        </div>
+      </div> 
+
+      <div class="col-12 col-md-4 col-lg-4  icon-center mt-4">
+          <div class="box ">
+            <p><img src="images/p3.jpg" alt="" class="img-fluid"></p>
+            <div class="light1"></div>
+            <div class="dark"></div>
+          </div>
+      </div> 
+      
+
+
+
+
+
+    </div>
+  </div>
+
+<!-- end of section1 codes -->
+
+<!-- start of section2 codes -->
+ <div class="container">
+    <div class="row">
+
+      <div class="col-12 col-md-4 col-lg-4  icon-center mt-4">
+        <div class="box">
+          <p><img src="images/p4.jpg" alt="" class="img-fluid"></p>
+          <div class="light1"></div>
+          <div class="dark"></div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-8 col-lg-8    icon-center mt-4">
+        <div class="box-large" >
+          <p><img src="images/p5.jpg" alt="" class="img-fluid mt-1"></p>
+          <div class="light1"></div>
+          <div class="dark"></div>
+        </div>
+      </div>
+
+      
+      
+    </div>
+ </div>
+
+ <div class="container">
+  <div class="row">
+
+    <div class="col-12 col-md-8 col-lg-8 icon-center mt-4">
+      <div class="box-large" >
+        <p><img src="images/p6.jpg" alt="" class="img-fluid mt-1"></p>
+        <div class="light1"></div>
+        <div class="dark"></div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4 col-lg-4 icon-center mt-4">
+      <div class="box">
+        <p><img src="images/p7.jpg" alt="" class="img-fluid"></p>
+        <div class="light1"></div>
+        <div class="dark"></div>
+      </div>
+    </div>
+
+     
+  </div>
+</div>
+<!-- end of section2 codes -->
+
+<!-- start section3 codes -->
+<h3 class="sectionTitle"> 
+  <span>تک سایزها</span>
+</h3>
+
+<div class=container-fluid>
+  <div class="row sectionbg">
+    <!-- <div class="sectionbg ">     -->
+
+
+      <div class=" col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2">
+
+        <div>
+
+            <div class="card  border-0 mt-5" style="width: 100%;">
+                <img src="images/تک سایزها.jpg" class="card-img-top" alt="...">    
+            </div> 
+            <div class="d-grid gap-2 col-12 mx-auto">
+              <button class="btn-color rounded-pill mt-3" type="button"><i class="fas fa-eye"></i> &nbsp;مشاهده همه</button> 
+            </div>
+
+        </div>
+
+
+        
+      </div> 
+
+
+      <div class=" col-12  col-sm-6 col-md-6 col-lg-3 col-xl-2 ">
+        <div class="card mt-5 mb-5" style="width: 100%;">
+
+          <div>
+            <div class="card-pic-trim mx-auto mt-3 rounded-3">
+              <img src="images/photo1.jpg"  alt="...">
+              <div class="price-bar"><i class="fas fa-eye"></i> &nbsp;مشاهده</div>
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">پیراهن مردانه طرح جین مدل 0038</h6>
+              <br></br>
+              <p class="strike">&nbsp;<s>349,000تومان</s>&nbsp;&nbsp;<span class=" textbg-off badge rounded-pill p-2">50%</span></p>
+              <p class="card-text">115,000 تومان</p>
+              <p class="card-size">فقط سایز:&nbsp;<span class="badge rounded text-bg-secondary p-2">XXL</span></p>
+            </div> 
+
+          </div>
+
+        </div> 
+      </div> 
+      <div class=" col-12  col-sm-6 col-md-6 col-lg-3 col-xl-2 ">
+        <div class="card mt-5 mb-5" style="width: 100%;">
+
+          <div>
+            <div class="card-pic-trim mx-auto mt-3 rounded-3">
+              <img src="images/photo2.jpg"  alt="...">
+              <div class="price-bar"><i class="fas fa-eye"></i> &nbsp;مشاهده</div>
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">پیراهن مردانه طرح جین مدل 0038</h6>
+              <br></br>
+              <p class="strike">&nbsp;<s>349,000تومان</s>&nbsp;&nbsp;<span class=" textbg-off badge rounded-pill p-2">50%</span></p>
+              <p class="card-text">115,000 تومان</p>
+              <p class="card-size">فقط سایز:&nbsp;<span class="badge rounded text-bg-secondary p-2">XXL</span></p>
+            </div> 
+
+          </div>
+
+        </div> 
+      </div> 
+      <div class=" col-12  col-sm-6 col-md-6 col-lg-3 col-xl-2 ">
+        <div class="card mt-5 mb-5" style="width: 100%;">
+
+          <div>
+            <div class="card-pic-trim mx-auto mt-3 rounded-3">
+              <img src="images/photo3.jpg"  alt="...">
+              <div class="price-bar"><i class="fas fa-eye"></i> &nbsp;مشاهده</div>
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">پیراهن مردانه طرح جین مدل 0038</h6>
+              <br></br>
+              <p class="strike">&nbsp;<s>349,000تومان</s>&nbsp;&nbsp;<span class=" textbg-off badge rounded-pill p-2">50%</span></p>
+              <p class="card-text">115,000 تومان</p>
+              <p class="card-size">فقط سایز:&nbsp;<span class="badge rounded text-bg-secondary p-2">XXL</span></p>
+            </div> 
+
+          </div>
+
+        </div> 
+      </div> 
+      <div class=" col-12  col-sm-6 col-md-6 col-lg-3 col-xl-2 ">
+        <div class="card mt-5 mb-5" style="width: 100%;">
+
+          <div>
+            <div class="card-pic-trim mx-auto mt-3 rounded-3">
+              <img src="images/photo4.jpg"  alt="...">
+              <div class="price-bar"><i class="fas fa-eye"></i> &nbsp;مشاهده</div>
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">پیراهن مردانه طرح جین مدل 0038</h6>
+              <br></br>
+              <p class="strike">&nbsp;<s>349,000تومان</s>&nbsp;&nbsp;<span class=" textbg-off badge rounded-pill p-2">50%</span></p>
+              <p class="card-text">115,000 تومان</p>
+              <p class="card-size">فقط سایز:&nbsp;<span class="badge rounded text-bg-secondary p-2">XXL</span></p>
+            </div> 
+
+          </div>
+
+        </div> 
+      </div> 
+      <div class=" col-12  col-sm-6 col-md-6 col-lg-3 col-xl-2 ">
+        <div class="card mt-5 mb-5" style="width: 100%;">
+
+          <div>
+            <div class="card-pic-trim mx-auto mt-3 rounded-3">
+              <img src="images/photo5.jpg"  alt="...">
+              <div class="price-bar"><i class="fas fa-eye"></i> &nbsp;مشاهده</div>
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">پیراهن مردانه طرح جین مدل 0038</h6>
+              <br></br>
+              <p class="strike">&nbsp;<s>349,000تومان</s>&nbsp;&nbsp;<span class=" textbg-off badge rounded-pill p-2">50%</span></p>
+              <p class="card-text">115,000 تومان</p>
+              <p class="card-size">فقط سایز:&nbsp;<span class="badge rounded text-bg-secondary p-2">XXL</span></p>
+            </div> 
+
+          </div>
+
+        </div> 
+      </div>
+  </div>
+</div>
+<!-- end section3 codes -->
+<h3 class="sectiondown"> 
+  <span>جدیدترین ها</span>
+</h3>
+
+
+
+<!-- start section4 codes -->
+<div class="container">
+  <div class="row ">
+
+    <div class=" col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2 ">
+      <div class="card border-0 mt-5 mb-5" style="width: 100%;">
+
+        <div>
+          <div class="card-pic-trim mx-auto mt-3 rounded-3">
+            <img src="images/s4-1.jpg"  alt="...">
+            <div class="price-bar"><i class="fas fa-eye"></i> &nbsp;مشاهده</div>
+          </div>
+          <div class="card-body">
+            <h6 class="card-title">گیره سر خرگوشی طرح هویج</h6>
+            <h6><i class="fa fa-star-o style='color: red'"></i><i class="fa fa-star yellow-color"></i> <i class="fa fa-star yellow-color"></i> <i class="fa fa-star yellow-color"></i> <i class="fa fa-star yellow-color"></i></h6>
+            <p class="strike2"><s>149,000تومان</s></p>
+            <p class="card-text2">120,000 تومان</p>
+          </div> 
+
+        </div>
+      </div> 
+    </div> 
+    <div class=" col-12  col-sm-6 col-md-6 col-lg-3 col-xl-2 ">
+      <div class="card border-0 mt-5 mb-5" style="width: 100%;">
+
+        <div>
+          <div class="card-pic-trim mx-auto mt-3 rounded-3">
+            <img src="images/s4-2.jpg"  alt="...">
+            <div class="price-bar"><i class="fas fa-eye"></i> &nbsp;مشاهده</div>
+          </div>
+          <div class="card-body">
+            <h6 class="card-title">گیره سر خرگوشی طرح هویج</h6>
+            <h6><i class="fa fa-star-o style='color: red'"></i><i class="fa fa-star yellow-color"></i> <i class="fa fa-star yellow-color"></i> <i class="fa fa-star yellow-color"></i> <i class="fa fa-star yellow-color"></i></h6>
+            <p class="strike2"><s>149,000تومان</s></p>
+            <p class="card-text2">120,000 تومان</p>
+          </div> 
+
+        </div>
+      </div> 
+    </div> 
+    <div class=" col-12  col-sm-6 col-md-6 col-lg-3 col-xl-2 ">
+      <div class="card border-0 mt-5 mb-5" style="width: 100%;">
+
+        <div>
+          <div class="card-pic-trim mx-auto mt-3 rounded-3">
+            <img src="images/s4-3.jpg"  alt="...">
+            <div class="price-bar"><i class="fas fa-eye"></i> &nbsp;مشاهده</div>
+          </div>
+          <div class="card-body">
+            <h6 class="card-title">گیره سر خرگوشی طرح هویج</h6>
+            <h6><i class="fa fa-star-o style='color: red'"></i><i class="fa fa-star yellow-color"></i> <i class="fa fa-star yellow-color"></i> <i class="fa fa-star yellow-color"></i> <i class="fa fa-star yellow-color"></i></h6>
+            <p class="strike2"><s>149,000تومان</s></p>
+            <p class="card-text2">120,000 تومان</p>
+          </div> 
+
+        </div>
+      </div> 
+    </div> 
+    <div class=" col-12  col-sm-6 col-md-6 col-lg-3 col-xl-2 ">
+      <div class="card border-0 mt-5 mb-5" style="width: 100%;">
+
+        <div>
+          <div class="card-pic-trim mx-auto mt-3 rounded-3">
+            <img src="images/s4-4.jpg"  alt="...">
+            <div class="price-bar"><i class="fas fa-eye"></i> &nbsp;مشاهده</div>
+          </div>
+          <div class="card-body">
+            <h6 class="card-title">گیره سر خرگوشی طرح هویج</h6>
+            <h6><i class="fa fa-star-o style='color: red'"></i><i class="fa fa-star yellow-color"></i> <i class="fa fa-star yellow-color"></i> <i class="fa fa-star yellow-color"></i> <i class="fa fa-star yellow-color"></i></h6>
+            <p class="strike2"><s>149,000تومان</s></p>
+            <p class="card-text2">120,000 تومان</p>
+          </div> 
+
+        </div>
+      </div> 
+    </div> 
+    <div class=" col-12  col-sm-6 col-md-6 col-lg-3 col-xl-2 ">
+      <div class="card border-0 mt-5 mb-5" style="width: 100%;">
+
+        <div>
+          <div class="card-pic-trim mx-auto mt-3 rounded-3">
+            <img src="images/s4-5.jpg"  alt="...">
+            <div class="price-bar"><i class="fas fa-eye"></i> &nbsp;مشاهده</div>
+          </div>
+          <div class="card-body">
+            <h6 class="card-title">گیره سر خرگوشی طرح هویج</h6>
+            <h6><i class="fa fa-star-o style='color: red'"></i><i class="fa fa-star yellow-color"></i> <i class="fa fa-star yellow-color"></i> <i class="fa fa-star yellow-color"></i> <i class="fa fa-star yellow-color"></i></h6>
+            <p class="strike2"><s>149,000تومان</s></p>
+            <p class="card-text2">120,000 تومان</p>
+          </div> 
+
+        </div>
+      </div> 
+    </div> 
+    <div class=" col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2 ">
+      <div class="card border-0 mt-5 mb-5" style="width: 100%;">
+
+        <div>
+          <div class="card-pic-trim mx-auto mt-3 rounded-3">
+            <img src="images/s4-6.jpg"  alt="...">
+            <div class="price-bar"><i class="fas fa-eye"></i> &nbsp;مشاهده</div>
+          </div>
+          <div class="card-body">
+            <h6 class="card-title">گیره سر خرگوشی طرح هویج</h6>
+            <h6><i class="fa fa-star-o style='color: red'"></i><i class="fa fa-star yellow-color"></i> <i class="fa fa-star yellow-color"></i> <i class="fa fa-star yellow-color"></i> <i class="fa fa-star yellow-color"></i></h6>
+            <p class="strike2"><s>149,000تومان</s></p>
+            <p class="card-text2">120,000 تومان</p>
+          </div> 
+
+        </div>
+      </div> 
+    </div> 
+
+   
+    
+    
+
+  </div>
+</div>
+<!-- end section4 codes -->
+
+<div class="container">
+  <div class="row">
+    <div class="d-grid gap-2 col-6  col-lg-4 mx-auto">
+      <button class="btn-color rounded-pill mt-3" type="button"><i class="fas fa-eye"></i> &nbsp;مشاهده همه</button> 
+    </div>
+  </div>
+</div>
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
